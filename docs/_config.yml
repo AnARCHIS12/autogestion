@@ -1,20 +1,16 @@
 title: Bot Revolt Militant
 description: Un bot Revolt engagé pour l'éducation politique et la solidarité de classe
-theme: jekyll-theme-cayman
 remote_theme: pages-themes/cayman@v0.2.0
+baseurl: "/autogestion"
+url: "https://anarchis12.github.io"
 
-# Configuration du site
-url: "https://anarchis12.github.io/autogestion/"
-baseurl: "/autogestion-"
-
-# Configuration des plugins
 plugins:
   - jekyll-remote-theme
   - jekyll-seo-tag
-  - jekyll-sitemap
-  - jekyll-feed
 
-# Configuration de la navigation
+show_downloads: false
+
+# Navigation
 navigation:
   - title: Accueil
     url: /
@@ -24,15 +20,3 @@ navigation:
     url: /commandes
   - title: Contribution
     url: /contribution
-
-# Paramètres du thème
-show_downloads: false
-google_analytics: # Votre ID Google Analytics (optionnel)
-
-# Configuration par défaut pour les pages
-defaults:
-  -
-    scope:
-      path: "" # Un chemin vide signifie tous les fichiers du projet
-    values:
-      layout: "default"
