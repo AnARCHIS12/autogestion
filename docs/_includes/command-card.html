@@ -1,0 +1,18 @@
+<div class="command-card">
+    <h3>{{ include.name }}</h3>
+    <p>{{ include.description }}</p>
+    
+    <div class="command-usage">
+        {{ include.usage }}
+    </div>
+    
+    {% if include.permission %}
+    <div class="command-permission">
+        <span class="badge permission">{{ include.permission }}</span>
+    </div>
+    {% endif %}
+    
+    <div class="command-category">
+        <span class="badge category">{{ include.category }}</span>
+    </div>
+</div>

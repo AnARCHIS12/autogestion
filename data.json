@@ -1,0 +1,47 @@
+{
+    "welcomeMessages": {
+        "default": "Bienvenue, camarade {username} ! ✊\nRejoins la lutte pour un monde plus juste et égalitaire.\nUtilise `!help` pour découvrir toutes les commandes disponibles."
+    },
+    "welcomeChannels": {},
+    "reactionRoles": {
+        "messages": {},
+        "configs": {}
+    },
+    "questionnaire": {
+        "channels": {},
+        "serverQuestions": {},
+        "defaultQuestions": {
+            "Identité Politique": [
+                "Quels courants prône tu ?"
+            ],
+            "Analyse du Système": [
+                "Comment perçois-tu la lutte contre le capitalisme et l'État ?",
+                "Quelle est ta position sur l'autogestion et l'organisation horizontale ?"
+            ],
+            "Action Directe": [
+                "Quelles formes d'actions directes privilégies-tu ?",
+                "Comment envisages-tu la construction d'alternatives au système actuel ?"
+            ],
+            "Luttes Intersectionnelles": [
+                "Quelle ta position sur les luttes féministes, LGBTQ+ et antiracistes ?"
+            ]
+        }
+    },
+    "moderation": {
+        "logs": {},
+        "warnings": {},
+        "mutes": {},
+        "automod": {
+            "bannedWords": {},
+            "spamThreshold": {},
+            "capsThreshold": {},
+            "inviteFilter": {},
+            "linkFilter": {}
+        },
+        "antiraid": {}
+    },
+    "logging": {
+        "channels": {},
+        "settings": {}
+    }
+}

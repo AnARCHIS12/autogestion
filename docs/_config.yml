@@ -1,0 +1,34 @@
+title: Bot Revolt Militant
+description: Un bot Revolt engagé pour l'éducation politique et la solidarité de classe
+theme: jekyll-theme-cayman
+
+# Configuration du site
+url: ""
+baseurl: "/revolt-bot"
+
+# Configuration des plugins
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Configuration de la navigation
+navigation:
+  - title: Accueil
+    url: /
+  - title: Installation
+    url: /installation
+  - title: Commandes
+    url: /commandes
+  - title: Configuration
+    url: /configuration
+  - title: Modération
+    url: /moderation
+  - title: FAQ
+    url: /faq
+
+# Métadonnées par défaut
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
