@@ -1,212 +1,192 @@
----
----
-
-@import 'jekyll-theme-cayman';
-
-:root {
-  /* Variables */
-  $primary-color: #ff0000;
-  $secondary-color: #1a1a1a;
-  $text-color: #333;
-  $link-color: #ff0000;
-  $bg-color: #ffffff;
-  
-  /* Base styles */
-  body {
+body {
     font-family: 'Segoe UI', system-ui, sans-serif;
     line-height: 1.6;
-    color: $text-color;
-    background: $bg-color;
-  }
-  
-  .site-header {
-    background: $secondary-color;
+    color: #333;
+    background: #ffffff;
+}
+
+.site-header {
+    background: #1a1a1a;
     padding: 1rem 0;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  }
-  
-  .site-title {
+}
+
+.site-title {
     color: white;
     font-size: 1.5rem;
     font-weight: bold;
     text-decoration: none;
-    
-    &:hover {
-      color: $primary-color;
-    }
-  }
-  
-  .site-nav {
+}
+
+.site-title:hover {
+    color: #ff0000;
+}
+
+.site-nav {
     display: flex;
     gap: 1rem;
-    
-    .nav-link {
-      color: white;
-      text-decoration: none;
-      padding: 0.5rem 1rem;
-      border-radius: 4px;
-      
-      &:hover {
-        background: $primary-color;
-      }
-    }
-  }
-  
-  .wrapper {
+}
+
+.site-nav .nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+}
+
+.site-nav .nav-link:hover {
+    background: #ff0000;
+}
+
+.wrapper {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 1rem;
-  }
-  
-  .page-content {
+}
+
+.page-content {
     padding: 2rem 0;
-  }
-  
-  /* Command cards */
-  .command-card {
+}
+
+.command-card {
     background: white;
     border-radius: 8px;
     padding: 1.5rem;
     margin-bottom: 1rem;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    
-    h3 {
-      color: $primary-color;
-      margin-top: 0;
-    }
-    
-    .command-usage {
-      background: #f5f5f5;
-      padding: 0.5rem;
-      border-radius: 4px;
-      font-family: monospace;
-    }
-  }
-  
-  /* Badges */
-  .badge {
+}
+
+.command-card h3 {
+    color: #ff0000;
+    margin-top: 0;
+}
+
+.command-card .command-usage {
+    background: #f5f5f5;
+    padding: 0.5rem;
+    border-radius: 4px;
+    font-family: monospace;
+}
+
+.badge {
     display: inline-block;
     padding: 0.25rem 0.75rem;
     border-radius: 999px;
     font-size: 0.875rem;
     font-weight: 500;
-    
-    &.permission {
-      background: $primary-color;
-      color: white;
-    }
-    
-    &.category {
-      background: $secondary-color;
-      color: white;
-    }
-  }
-  
-  /* Tables */
-  table {
+}
+
+.badge.permission {
+    background: #ff0000;
+    color: white;
+}
+
+.badge.category {
+    background: #1a1a1a;
+    color: white;
+}
+
+table {
     width: 100%;
     border-collapse: collapse;
     margin: 1rem 0;
-    
-    th, td {
-      padding: 0.75rem;
-      border: 1px solid #ddd;
-    }
-    
-    th {
-      background: $secondary-color;
-      color: white;
-    }
-    
-    tr:nth-child(even) {
-      background: #f9f9f9;
-    }
-  }
-  
-  /* Footer */
-  .site-footer {
-    background: $secondary-color;
+}
+
+table th,
+table td {
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background: #1a1a1a;
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+.site-footer {
+    background: #1a1a1a;
     color: white;
     padding: 2rem 0;
     margin-top: 4rem;
-    
-    .footer-links {
-      display: flex;
-      gap: 1rem;
-      margin-top: 1rem;
-      
-      a {
-        color: white;
-        text-decoration: none;
-        
-        &:hover {
-          color: $primary-color;
-        }
-      }
-    }
-  }
-  
-  /* Hero section */
-  .hero {
+}
+
+.site-footer .footer-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.site-footer .footer-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.site-footer .footer-links a:hover {
+    color: #ff0000;
+}
+
+.hero {
     text-align: center;
     padding: 4rem 0;
-    background: linear-gradient(135deg, $secondary-color, $primary-color);
+    background: linear-gradient(135deg, #1a1a1a, #ff0000);
     color: white;
     margin-bottom: 3rem;
-    
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 1rem;
-    }
-    
-    p {
-      font-size: 1.25rem;
-      margin-bottom: 2rem;
-    }
-    
-    .badges {
-      display: flex;
-      gap: 1rem;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-  }
-  
-  /* Features grid */
-  .features-grid {
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.hero .badges {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.features-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     margin: 3rem 0;
-  }
-  
-  .feature-card {
+}
+
+.feature-card {
     background: white;
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    
-    h3 {
-      color: $primary-color;
-      margin-top: 0;
-    }
-    
-    ul {
-      list-style-type: none;
-      padding-left: 0;
-      
-      li {
-        margin-bottom: 0.5rem;
-        padding-left: 1.5rem;
-        position: relative;
-        
-        &:before {
-          content: "→";
-          position: absolute;
-          left: 0;
-          color: $primary-color;
-        }
-      }
-    }
-  }
+}
+
+.feature-card h3 {
+    color: #ff0000;
+    margin-top: 0;
+}
+
+.feature-card ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.feature-card ul li {
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.feature-card ul li:before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: #ff0000;
 }
