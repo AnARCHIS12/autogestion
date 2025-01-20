@@ -1,14 +1,8 @@
 title: Bot Revolt Militant
 description: Un bot Revolt engagé pour l'éducation politique et la solidarité de classe
-remote_theme: pages-themes/cayman@v0.2.0
-baseurl: "/autogestion"
-url: "https://anarchis12.github.io"
+theme: jekyll-theme-cayman
 
-plugins:
-  - jekyll-remote-theme
-  - jekyll-seo-tag
-
-show_downloads: false
+markdown: kramdown
 
 # Navigation
 navigation:
