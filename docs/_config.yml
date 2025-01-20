@@ -1,6 +1,6 @@
 title: Bot Revolt Militant
 description: Un bot Revolt engagé pour l'éducation politique et la solidarité de classe
-theme: jekyll-theme-cayman
+remote_theme: pages-themes/cayman@v0.2.0
 
 # Configuration du site
 url: ""
@@ -8,6 +8,7 @@ baseurl: "/revolt-bot"
 
 # Configuration des plugins
 plugins:
+  - jekyll-remote-theme
   - jekyll-seo-tag
   - jekyll-sitemap
 
@@ -32,3 +33,8 @@ defaults:
       path: ""
     values:
       layout: default
+
+# Configuration du thème
+sass:
+  style: compressed
+  sass_dir: _sass
