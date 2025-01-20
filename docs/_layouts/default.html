@@ -1,38 +1,32 @@
 <!DOCTYPE html>
-<html lang="fr">
-<head>
+<html lang="{{ site.lang | default: "fr-FR" }}">
+  <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
-    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     {% seo %}
-</head>
-<body>
-    <header class="site-header">
-        <div class="wrapper">
-            <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
-            <nav class="site-nav">
-                {% for item in site.navigation %}
-                <a href="{{ item.url | relative_url }}" class="nav-link">{{ item.title }}</a>
-                {% endfor %}
-            </nav>
-        </div>
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+  </head>
+  <body>
+    <a id="skip-to-content" href="#content">Skip to the content.</a>
+
+    <header class="page-header" role="banner">
+      <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
+      <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
+      {% for item in site.navigation %}
+        <a href="{{ item.url | relative_url }}" class="btn">{{ item.title }}</a>
+      {% endfor %}
     </header>
 
-    <main class="page-content">
-        <div class="wrapper">
-            {{ content }}
-        </div>
-    </main>
+    <main id="content" class="main-content" role="main">
+      {{ content }}
 
-    <footer class="site-footer">
-        <div class="wrapper">
-            <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}. Tous droits réservés.</p>
-            <div class="footer-links">
-                <a href="https://github.com/votre-repo" target="_blank">GitHub</a>
-                <a href="https://revolt.chat/votre-serveur" target="_blank">Revolt</a>
-            </div>
-        </div>
-    </footer>
-</body>
+      <footer class="site-footer">
+        {% if site.github.is_project_page %}
+          <span class="site-footer-owner"><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> est maintenu par <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.</span>
+        {% endif %}
+        <span class="site-footer-credits">Cette page est générée par <a href="https://pages.github.com">GitHub Pages</a>.</span>
+      </footer>
+    </main>
+  </body>
 </html>
