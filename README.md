@@ -31,7 +31,7 @@ Un bot Revolt puissant et modulaire avec des fonctionnalités avancées de modé
 
 ```bash
 # Cloner le repository
-git clone [URL_DU_REPO]
+git clone https://github.com/AnARCHIS12/autogestion
 
 # Installer les dépendances
 npm install
