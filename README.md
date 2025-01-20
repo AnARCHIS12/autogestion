@@ -1,4 +1,4 @@
-# 🤖 Bot Discord Multifonction
+# 🤖 Bot Revolt Militant
 
 <div align="center">
 
@@ -12,7 +12,7 @@
 ---
 
 <p align="center">
-Un bot Discord puissant et modulaire avec des fonctionnalités avancées de modération, automodération, anti-raid, et plus encore !
+Un bot Revolt puissant et modulaire avec des fonctionnalités avancées de modération, automodération, anti-raid, et plus encore !
 </p>
 
 ## ✨ Fonctionnalités Principales
@@ -59,115 +59,51 @@ npm start
 
 ## 🤖 Commandes
 
-### 📚 Éducation Politique
-
-| Commande | Description |
-|----------|-------------|
-| `!citation` | Citation révolutionnaire aléatoire |
-| `!ressources` | Liste de lectures recommandées |
-| `!histoire` | Événements historiques importants |
-| `!analyse [sujet]` | Analyse marxiste d'un sujet |
-
-### ✊ Action Militante
-
-| Commande | Description |
-|----------|-------------|
-| `!action` | Guide d'action militante |
-| `!solidarite` | Suggestions d'actions de solidarité |
-| `!manif` | Prochaines manifestations |
-| `!tract` | Générateur de tracts |
-
 ### 🛡️ Modération
 
 | Commande | Description | Permission |
 |----------|-------------|------------|
-| `!warn @user [raison]` | Avertir un utilisateur | ModerateMembers |
-| `!warnings [@user]` | Voir les avertissements | ModerateMembers |
-| `!clearwarnings @user` | Effacer les avertissements | ModerateMembers |
-| `!kick @user [raison]` | Expulser un utilisateur | KickMembers |
-| `!ban @user [raison]` | Bannir un utilisateur | BanMembers |
-| `!unban <userId>` | Débannir un utilisateur | BanMembers |
-| `!mute @user [durée] [raison]` | Réduire au silence | ModerateMembers |
-| `!unmute @user` | Rendre la parole | ModerateMembers |
-| `!clear [nombre]` | Supprimer des messages | ManageMessages |
-| `!modlogs [@user]` | Historique de modération | ViewAuditLog |
-
-### ⚙️ Configuration
-
-| Commande | Description | Permission |
-|----------|-------------|------------|
-| `!setwelcome [message]` | Message de bienvenue | ManageServer |
-| `!viewwelcome` | Voir message actuel | Aucune |
-| `!resetwelcome` | Réinitialiser message | ManageServer |
-| `!setwelcomechannel #canal` | Canal de bienvenue | ManageServer |
-| `!viewwelcomechannel` | Voir canal actuel | Aucune |
-| `!resetwelcomechannel` | Réinitialiser canal | ManageServer |
-
-### 📝 Questionnaire
-
-| Commande | Description | Permission |
-|----------|-------------|------------|
-| `!setquestionnaire` | Définir canal questionnaire | ManageServer |
-| `!removequestionnaire` | Désactiver questionnaire | ManageServer |
-| `!addquestion <catégorie> <question>` | Ajouter question | ManageServer |
-| `!removequestion <catégorie> <numéro>` | Supprimer question | ManageServer |
-| `!viewquestions` | Voir toutes les questions | Aucune |
-| `!resetquestions` | Questions par défaut | ManageServer |
+| `!warn @user` | Avertir un utilisateur | ModerateMembers |
+| `!kick @user` | Expulser un utilisateur | KickMembers |
+| `!ban @user` | Bannir un utilisateur | BanMembers |
+| `!mute @user` | Réduire au silence | ModerateMembers |
+| `!clear` | Supprimer des messages | ManageMessages |
 
 ### 🤖 AutoModération
 
-| Commande | Description | Permission |
-|----------|-------------|------------|
-| `!automod` | Voir configuration | ManageServer |
-| `!automod enable/disable` | Activer/Désactiver | ManageServer |
-| `!automod spam <nombre>` | Seuil de spam | ManageServer |
-| `!automod caps <pourcentage>` | Limite majuscules | ManageServer |
-| `!automod invites <on/off>` | Filtre invitations | ManageServer |
-| `!automod links <on/off>` | Filtre liens | ManageServer |
-| `!automod addword <mot>` | Ajouter mot banni | ManageServer |
-| `!automod removeword <mot>` | Retirer mot banni | ManageServer |
+| Paramètre | Description | Valeur par défaut |
+|-----------|-------------|-------------------|
+| Spam | Détection de spam | 5 msgs/10s |
+| Caps | Limite de majuscules | 70% |
+| Liens | Filtrage des liens | Désactivé |
+| Invitations | Filtrage des invites | Désactivé |
 
 ### ⚔️ Anti-Raid
 
-| Commande | Description | Permission |
-|----------|-------------|------------|
-| `!antiraid` | Voir configuration | ManageServer |
-| `!antiraid enable/disable` | Activer/Désactiver | ManageServer |
-| `!antiraid lockdown <on/off>` | Mode lockdown | ManageServer |
-| `!antiraid joins <seuil> <secondes>` | Seuil nouveaux membres | ManageServer |
-| `!antiraid actions <seuil> <secondes>` | Seuil actions | ManageServer |
-| `!antiraid punishment <ban/kick/mute>` | Punition raiders | ManageServer |
-
-### 💾 Backup
-
-| Commande | Description | Permission |
-|----------|-------------|------------|
-| `!backup create` | Créer backup | ManageServer |
-| `!backup list` | Liste des backups | ManageServer |
-| `!backup info <nom>` | Détails backup | ManageServer |
-| `!backup restore <nom>` | Restaurer backup | ManageServer |
-| `!backup delete <nom>` | Supprimer backup | ManageServer |
-| `!backup auto <on/off>` | Backup automatique | ManageServer |
-
-### 📊 Statistiques
-
-| Commande | Description |
+| Fonction | Description |
 |----------|-------------|
-| `!stats` | Stats du serveur |
-| `!memberinfo @user` | Info utilisateur |
-| `!serverinfo` | Info serveur |
-| `!roleinfo @role` | Info rôle |
-| `!channelinfo #canal` | Info canal |
+| Détection | Surveillance des joins massifs |
+| Lockdown | Verrouillage automatique |
+| Punition | Ban/Kick/Mute configurable |
+| Alertes | Notifications en temps réel |
 
-### 🛠️ Utilitaires
+### 📝 Système de Logs
 
-| Commande | Description |
-|----------|-------------|
-| `!help [commande]` | Aide détaillée |
-| `!ping` | Latence du bot |
-| `!invite` | Lien d'invitation |
-| `!support` | Serveur support |
-| `!github` | Code source |
+| Événement | Description | Badge |
+|-----------|-------------|--------|
+| Messages | Modifications & suppressions | 🗑️ |
+| Membres | Joins & départs | 👋 |
+| Modération | Actions des modérateurs | 🔨 |
+| Serveur | Modifications du serveur | ⚙️ |
+
+### 💾 Système de Backup
+
+| Commande | Description | Badge |
+|----------|-------------|--------|
+| `!backup create` | Créer une backup | 💾 |
+| `!backup list` | Lister les backups | 📋 |
+| `!backup restore` | Restaurer une backup | ⏮️ |
+| `!backup delete` | Supprimer une backup | 🗑️ |
 
 ## 📊 Statistiques
 
@@ -187,7 +123,7 @@ Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de 
 
 <div align="center">
 
-[![Discord](https://img.shields.io/badge/Discord-Rejoindre-7289DA.svg?style=for-the-badge&logo=discord)](https://discord.gg/votre-serveur)
+[![Revolt](https://img.shields.io/badge/Revolt-Rejoindre-7289DA.svg?style=for-the-badge&logo=revolt)](https://revolt.chat/votre-serveur)
 [![GitHub](https://img.shields.io/badge/GitHub-Contribuer-181717.svg?style=for-the-badge&logo=github)](https://github.com/votre-repo)
 
 </div>
