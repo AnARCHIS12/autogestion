@@ -1,47 +1,215 @@
 {
-    "welcomeMessages": {
-        "default": "Bienvenue, camarade {username} ! ✊\nRejoins la lutte pour un monde plus juste et égalitaire.\nUtilise `!help` pour découvrir toutes les commandes disponibles."
-    },
-    "welcomeChannels": {},
-    "reactionRoles": {
-        "messages": {},
-        "configs": {}
-    },
-    "questionnaire": {
-        "channels": {},
-        "serverQuestions": {},
-        "defaultQuestions": {
-            "Identité Politique": [
-                "Quels courants prône tu ?"
-            ],
-            "Analyse du Système": [
-                "Comment perçois-tu la lutte contre le capitalisme et l'État ?",
-                "Quelle est ta position sur l'autogestion et l'organisation horizontale ?"
-            ],
-            "Action Directe": [
-                "Quelles formes d'actions directes privilégies-tu ?",
-                "Comment envisages-tu la construction d'alternatives au système actuel ?"
-            ],
-            "Luttes Intersectionnelles": [
-                "Quelle ta position sur les luttes féministes, LGBTQ+ et antiracistes ?"
-            ]
-        }
-    },
-    "moderation": {
-        "logs": {},
-        "warnings": {},
-        "mutes": {},
-        "automod": {
-            "bannedWords": {},
-            "spamThreshold": {},
-            "capsThreshold": {},
-            "inviteFilter": {},
-            "linkFilter": {}
-        },
-        "antiraid": {}
-    },
-    "logging": {
-        "channels": {},
-        "settings": {}
+  "serverConfigs": {
+    "01JJ1HH7MEYZG979VQ27K27NNG": {
+      "welcomeChannelId": null,
+      "welcomeMessage": "Bienvenue {username} sur notre serveur !",
+      "automodConfig": {
+        "enabled": false,
+        "bannedWords": [],
+        "spamThreshold": 5,
+        "capsThreshold": 70,
+        "inviteFilter": false,
+        "linkFilter": false
+      },
+      "antiRaidConfig": {
+        "enabled": false,
+        "joinThreshold": 5,
+        "joinTimeWindow": 10,
+        "actionThreshold": 8,
+        "actionTimeWindow": 10,
+        "punishment": "ban",
+        "lockdown": false
+      }
     }
+  },
+  "questionnaire": {
+    "channels": {
+      "01JJ1HH7MEYZG979VQ27K27NNG": "01JJ1PQWA3PTPXZ8HEGHZ9K32S",
+      "undefined": "01JJ1PQWA3PTPXZ8HEGHZ9K32S"
+    },
+    "serverQuestions": {},
+    "defaultQuestions": {
+      "Questions Politiques": [
+        "De quel bord politique es-tu?",
+        "De quelles idéologies politiques es-tu?",
+        "Une opinion sur le communisme ET une sur le capitalisme",
+        "Quel est le paysage politique, social et économique que tu voudrais avoir (sans limite)?",
+        "Une opinion sur L'immigration OU sur la lutte pour les droits lgbtq+",
+        "Une opinion sur les personnes transgenres et les pronoms inclusifs"
+      ]
+    }
+  },
+  "backups": {},
+  "moderation": {
+    "logs": {},
+    "warnings": {},
+    "mutes": {},
+    "automod": {
+      "bannedWords": {},
+      "spamThreshold": {},
+      "capsThreshold": {},
+      "inviteFilter": {},
+      "linkFilter": {},
+      "01JJ1HH7MEYZG979VQ27K27NNG": {
+        "enabled": false,
+        "bannedWords": [],
+        "spamThreshold": 5,
+        "capsThreshold": 70,
+        "inviteFilter": false,
+        "linkFilter": false
+      },
+      "undefined": {
+        "enabled": false,
+        "bannedWords": [],
+        "spamThreshold": 5,
+        "capsThreshold": 70,
+        "inviteFilter": false,
+        "linkFilter": false
+      }
+    },
+    "antiraid": {
+      "01JJ1HH7MEYZG979VQ27K27NNG": {
+        "enabled": false,
+        "joinThreshold": 5,
+        "joinTimeWindow": 10,
+        "actionThreshold": 8,
+        "actionTimeWindow": 10,
+        "punishment": "ban",
+        "lockdown": false
+      },
+      "undefined": {
+        "enabled": true,
+        "joinThreshold": 5,
+        "joinTimeWindow": 10,
+        "actionThreshold": 8,
+        "actionTimeWindow": 10,
+        "punishment": "ban",
+        "lockdown": false
+      }
+    }
+  },
+  "welcomeChannels": {
+    "01JJ1HH7MEYZG979VQ27K27NNG": "01JJ1KK1YRFWRKNKYYZB696123",
+    "undefined": "01JJ1KK1YRFWRKNKYYZB696123"
+  },
+  "roleMenus": {
+    "undefined": {
+      "title": "Roles de lacommuneautogérée",
+      "roles": []
+    },
+    "01JJ2AXW72YE0Z6H22GPMTS93J": {
+      "title": "Roles de lacommuneautogérée",
+      "roles": []
+    },
+    "01JJ2BA3NS1SDNXEJP8NKTFP88": {
+      "title": "Lacommuneautogérée",
+      "roles": [
+        {
+          "emoji": "🌱",
+          "description": "Econarchiste"
+        }
+      ]
+    },
+    "01JJ2BHEPRX4CFXFWD8KD905CM": {
+      "title": "Lacommuneautogérée",
+      "roles": [
+        {
+          "emoji": "🌱",
+          "description": "Econarchiste"
+        }
+      ]
+    },
+    "01JJ2BQ8DDBGHYN0JQ88B96XS7": {
+      "title": "Lacommuneautogérée",
+      "roles": [
+        {
+          "emoji": "🌱",
+          "description": "Econarchiste"
+        }
+      ]
+    },
+    "01JJ2BX00Y61TNAC6WYSWC0G4T": {
+      "title": "Lacommuneautogérée",
+      "roles": [
+        {
+          "emoji": "🌱",
+          "description": "Econarchiste"
+        }
+      ]
+    },
+    "01JJ2C5MDYNZVVR5A2ZMYAZCD5": {
+      "title": "Lacommuneautogérée",
+      "roles": [
+        {
+          "emoji": "🌱",
+          "description": "Econarchiste"
+        }
+      ]
+    },
+    "01JJ2CRH4QM175JDXHE4XCK2RF": {
+      "title": "Lacommuneautogérée",
+      "roles": [
+        {
+          "emoji": ":potted_plant:",
+          "description": "EcoNARCHISTE"
+        }
+      ]
+    },
+    "01JJ2CZGB50R221EB01X0FR37D": {
+      "title": "Lacommuneautogérée",
+      "roles": [
+        {
+          "emoji": "🌱",
+          "description": "eCO ANARCHISTE"
+        }
+      ]
+    },
+    "01JJ2D96RQ2VANHTPGMPT58HZC": {
+      "title": "\"Titre du menu\"",
+      "roles": []
+    }
+  },
+  "warnings": {},
+  "welcomeMessages": {
+    "default": "Bienvenue, camarade {username} ! ✊\nRejoins la lutte pour un monde plus juste et égalitaire.\nUtilise `!help` pour découvrir toutes les commandes disponibles.",
+    "01JJ1HH7MEYZG979VQ27K27NNG": "Bienvenue sur la commune autogérée {username}"
+  },
+  "reactionRoles": {
+    "messages": {
+      "01JJ23N5NGZQRXZPJYBH71G1YJ": {
+        "serverId": "01JJ1HH7MEYZG979VQ27K27NNG",
+        "channelId": "01JJ1KV6D49FYDM8KK5S6118G1",
+        "title": "<role communeautogérée>",
+        "roles": []
+      },
+      "01JJ23XTNH9NM4VV4S9KHXQK5S": {
+        "serverId": "01JJ1HH7MEYZG979VQ27K27NNG",
+        "channelId": "01JJ1KV6D49FYDM8KK5S6118G1",
+        "title": "role communeautogérée",
+        "roles": [
+          {
+            "emoji": "🪴",
+            "description": "econarchiste"
+          }
+        ]
+      },
+      "01JJ2463EX6NAM6REF8Z0SY7JH": {
+        "serverId": "01JJ1HH7MEYZG979VQ27K27NNG",
+        "channelId": "01JJ1KV6D49FYDM8KK5S6118G1",
+        "title": "Roles communeautogérée",
+        "roles": []
+      },
+      "01JJ24SG0XS1FS9FH011A5HTBR": {
+        "serverId": "01JJ1HH7MEYZG979VQ27K27NNG",
+        "channelId": "01JJ1KV6D49FYDM8KK5S6118G1",
+        "title": "\"Rôles du serveur\"",
+        "roles": []
+      }
+    },
+    "configs": {}
+  },
+  "logging": {
+    "channels": {},
+    "settings": {}
+  }
 }
