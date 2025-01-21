@@ -1,0 +1,197 @@
+{
+  "timestamp": 1737382478153,
+  "serverInfo": {
+    "name": "LAcommuneautogérée",
+    "description": "Un espace dédié à l’échange rassemble des personnes d’extrême gauche partageant les valeurs de solidarité, de respect et d’autonomie. Sans hiérarchie, il permet de partager des idées, d’organiser des actions collectives et de promouvoir des projets, tout en assurant la confidentialité et la sécurité des participants. Cet espace offre un refuge contre la surveillance et les systèmes oppressifs, favorisant la collaboration pour ouvrir la vérité du monde et construire une société plus équitable, sans domination ni exploitation."
+  },
+  "roles": [
+    {
+      "name": "camarade",
+      "hoist": true,
+      "permissions": {
+        "a": 2127577055,
+        "d": 0
+      }
+    },
+    {
+      "name": "Apprenti",
+      "hoist": true,
+      "permissions": {
+        "a": 0,
+        "d": 0
+      }
+    }
+  ],
+  "channels": [
+    {
+      "name": "🚩┃💬Général",
+      "type": "TextChannel",
+      "description": ""
+    },
+    {
+      "name": "🆕┃Bienvenue",
+      "type": "TextChannel",
+      "description": ""
+    },
+    {
+      "name": "🚩┃☀Rôles",
+      "type": "TextChannel",
+      "description": ""
+    },
+    {
+      "name": "🏴┃📢Annonce",
+      "type": "TextChannel",
+      "description": ""
+    },
+    {
+      "name": "🚩┃Partenariat",
+      "type": "TextChannel",
+      "description": ""
+    },
+    {
+      "name": "🚩┃☀Rôles",
+      "type": "TextChannel",
+      "description": ""
+    },
+    {
+      "name": "🏴┃💡Suggestions",
+      "type": "TextChannel",
+      "description": ""
+    },
+    {
+      "name": "ⓐ┃⬆Décision-serv",
+      "type": "TextChannel",
+      "description": ""
+    },
+    {
+      "name": "⚑⩜🕊Log-liberté🕊",
+      "type": "TextChannel",
+      "description": ""
+    },
+    {
+      "name": "🏴┃Milice-anti-faf",
+      "type": "TextChannel",
+      "description": ""
+    },
+    {
+      "name": "🏴┃🏞Cours",
+      "type": "TextChannel",
+      "description": ""
+    },
+    {
+      "name": "🚩┃👥Débats",
+      "type": "TextChannel",
+      "description": ""
+    },
+    {
+      "name": "🚩┃🌎Actualité",
+      "type": "TextChannel",
+      "description": ""
+    },
+    {
+      "name": "🏴┃📗Livres",
+      "type": "TextChannel",
+      "description": ""
+    },
+    {
+      "name": "🚩┃🎶Musique",
+      "type": "TextChannel",
+      "description": ""
+    },
+    {
+      "name": "🏴┃🎥Cinema",
+      "type": "TextChannel",
+      "description": ""
+    },
+    {
+      "name": "🚩┃📖Citations",
+      "type": "TextChannel",
+      "description": ""
+    },
+    {
+      "name": "🏴┃📺Media",
+      "type": "TextChannel",
+      "description": ""
+    },
+    {
+      "name": "🚩┃🎮Jeux-vidéos",
+      "type": "TextChannel",
+      "description": ""
+    },
+    {
+      "name": "🏴┃💻Infos",
+      "type": "TextChannel",
+      "description": ""
+    },
+    {
+      "name": "Ⓐ Voc🔊",
+      "type": "VoiceChannel",
+      "description": ""
+    },
+    {
+      "name": "Ⓐ Voc2🔊",
+      "type": "VoiceChannel",
+      "description": ""
+    },
+    {
+      "name": "🏴┃Géneral",
+      "type": "TextChannel",
+      "description": ""
+    },
+    {
+      "name": "🏴┃cours📙",
+      "type": "TextChannel",
+      "description": ""
+    },
+    {
+      "name": "🏴┃extrême-droite🇫🇷",
+      "type": "TextChannel",
+      "description": ""
+    },
+    {
+      "name": "🏴┃apolitique ",
+      "type": "TextChannel",
+      "description": ""
+    },
+    {
+      "name": "🏴┃centriste ",
+      "type": "TextChannel",
+      "description": ""
+    },
+    {
+      "name": "VOC",
+      "type": "VoiceChannel"
+    },
+    {
+      "name": "🏴┃🤖Commande",
+      "type": "TextChannel",
+      "description": ""
+    },
+    {
+      "name": "⚑⩜Presentation⚑⩜",
+      "type": "TextChannel"
+    }
+  ],
+  "settings": {
+    "welcomeChannel": "01JJ1KK1YRFWRKNKYYZB696123",
+    "moderation": {
+      "automod": {
+        "enabled": false,
+        "bannedWords": [],
+        "spamThreshold": 5,
+        "capsThreshold": 70,
+        "inviteFilter": false,
+        "linkFilter": false
+      },
+      "antiraid": {
+        "enabled": false,
+        "joinThreshold": 5,
+        "joinTimeWindow": 10,
+        "actionThreshold": 8,
+        "actionTimeWindow": 10,
+        "punishment": "ban",
+        "lockdown": false
+      }
+    }
+  }
+}
